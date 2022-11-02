@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My E-Portfolio</title>
+        <style>
+            #body{
+                
+                /* /background-color: rgb(166, 118, 86); */
+                flex-direction: column;
+                margin: 0;
+                background-image: url("images/bg_black.jpeg");
+                /* color: aliceblue; */
+            }
+            .navbar-nav{
+                margin-left: auto;
+            }
+            div i, div a{
+                text-decoration: none;
+                color: white;
+            }
+            div hr{
+                display: block;
+                border-top: 15px dashed blue;
+                overflow: hidden;
+            }
+            #whoami{
+                height: 100%;
+                display: flex;
+                justify-content: space-around   ;
+                padding: 10px;
+                flex-direction: column;
+                
+            }
+            #aboutme{
+                background-color: aquamarine;
+                width: 100%;
+                height: 90vh;
+            }
+            #mystuff{
+                background-color: aliceblue;
+            }
+            #contact{
+                background-color: #2D3047;
+            }
+            .divider{
+                border-top: 3px dashed whitesmoke;
+                width: 75vw;
+            }
+            .card a{
+                color: #2D3047;
+            }
+            
+            header{
+                height: 90vh;
+            }
+            .imgsizer img{
+                width: 100%;
+                height: 100px;
+            }
+            .imgsizer{
+                padding: 10px;
+            }
+
+        </style>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!--Bootstrap Icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        
+
+    </head>
+    <body id="body">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <img src="Kodego.png" alt="" style="width:50px; height:50px;">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar_collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar_collapse">
+                    <div class="navbar-nav" id="shift">
+                        <a href="#aboutme" class="nav-item nav-link text-white">About Me</a>
+                        <a href="#mystuff" class="nav-item nav-link text-white" >Projects</a>
+                        <a href="#contact" class="nav-item nav-link text-white">Contact Me</a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </nav>
+        <!--The Main Container-->
+        <div class="" id="mcBody">
+            <!--Name and Picture-->
+            <!-- <div id="whoami" class="text-center d-flex">
+                
+                <div class="">
+                    <img src="images/Me@2020.jpg" alt="" style="border-radius: 150px; border: 5px solid black ">
+                </div>
+                
+                <div class="">
+                    <span> Hello, There! I am</span>
+                    <h1> Franco Pacifico</h1> 
+                    <hr>
+                    <h2>Web Developer</h2>
+                </div>
+            </div> -->
+            <header class="text-white text-center">
+                <div class="container d-flex align-items-center flex-column">
+                    <!-- Masthead Avatar Image-->
+                    <img class="mb-5" src="images/Me@2020.jpg" alt="..." />
+                    <!-- Masthead Heading-->
+                    <h1 class="masthead-heading text-uppercase mb-0">Franco Pacifico</h1>
+                    <!-- Icon Divider-->
+                    
+                    <hr class="divider">
+                    
+                    <!-- Masthead Subheading-->
+                    <p class="masthead-subheading font-weight-light mb-0">Web Developer</p>
+                    <br>
+                </div>
+            </header>
+
+            <!--About Me-->
+            <!-- <div id="aboutme">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia culpa cupiditate similique aliquid dolorum, aspernatur eum dolore maiores rem eligendi veniam quidem officiis illum harum qui! Consectetur laboriosam esse id.</p>
+                <h3>Skills</h3>
+
+            </div> -->
+            <div class="page-section bg-primary text-white mb-0 p-3" id="aboutme">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">About Me</h2>
+                <div class="container">
+                    <div class="text-center">
+                        <p class="lead">Hello There! My name is Franco Pacifico and I'm soon to be Web Developer. I am now studying in a Bootcamp called KodeGo. Learning the makings of being a web developer.</p>
+                    </div>
+                    <br>
+                    <div >
+                        <h2 class="text-center">Things that I've experienced using</h2>
+                        <div class="d-flex">
+                            <div class="imgsizer"><img src="/images/htmllogo.png" alt=""></div>
+                            <div class="imgsizer"><img src="/images/csslogo.png" alt=""></div>
+                            <div class="imgsizer"><img src="/images/jslogo.png" alt=""></div>
+                            <div class="imgsizer"><img src="/images/reactlogo.png" alt=""></div>
+                            <div class="imgsizer"><img src="/images/phplogo.png" alt=""></div>
+                            <div class="imgsizer"><img src="/images/github.png" alt=""></div>
+                            <div class="imgsizer"><img src="/images/kierbchara.png" alt=""></div>
+                            <div class="imgsizer"><img src="/images/mysqlogo.png" alt=""></div>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                    <!-- About Section Button-->
+                    <div class="text-center mt-4">
+                        <a class="btn btn-xl btn-outline-light" href="#">
+                            
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Project or portfolio-->
+            <div id="mystuff" class="p-3 m-0">
+                <div class="container p-3">
+                    <h2 class="text-center text-uppercase text-white">Projects</h2>
+                </div>
+                <div class="d-flex row">
+                    
+                        <div class="card col-4">
+                            <a href="https://kyuru2425.github.io/"><h4 class="text-center">AnimeNovelsRead</h4>
+                            <img src="images/ANR.PNG" alt="" style="width:100%; height: 50vh;">
+                            </a>
+                        </div>
+                    
+                    <div class="card col-4">
+                        <h4 class="text-center">Hello!Work</h4>
+                        <img src="/images/hellowork.PNG" alt="">
+                    </div>
+                    <div class="card col-4">
+                        <h4 class="text-center">Activity 2</h4>
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+            <!--Contact Me-->
+            <!-- <div  class="d-flex row" id="contact">
+                <h2>Contact Me</h2>
+                <div><i class="bi bi-envelope"></i><a href="">francogpacifico24@gmail.com</a></div>
+                <div><i class="bi bi-phone"></i><a href="">(0995) - 0000000</a></div>
+                <div><i class="bi bi-facebook"></i><a href="">faceboook link here</a></div>
+            </div> -->
+            <div class="p-3" id="contact">
+                <div class="container-fluid">
+                    <h2 class="text-center text-white">Contact Me</h2>
+                    <div class="text-center form-group p-3">
+                        <form action="" class="container">
+                            <!-- <label for="name">Name:</label> -->
+                            <br>
+                            <input type="text" name="name" id="name" required class="form-control" placeholder="Name">
+                            <!-- <label for="email">Email:</label> -->
+                            <br>
+                            <input type="email" name="email" id="email" required class="form-control" placeholder="Email">
+                            <!-- <label for="message">Message:</label> -->
+                            <br>
+                            <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Your Message Here. . . . ."></textarea>
+                            <br>
+                            <input type="submit" name="btn_mail" id="btn_mail" class="btn btn-secondary">
+                        </form>
+                    </div>
+                    <div class="row text-white">
+                        <div class="col-3"><a href="https://github.com/kyuru2425"><i class="bi bi-github"></i>My Github</a></div>
+                        <div class="col-3"><a href=""><i class="bi bi-phone"></i>Call me (0995) - 1231234</a></div>
+                        <div class="col-3"><a href="francogpacifico24@gmail.com"><i class="bi bi-envelope"></i>francogpacifico24@gmail.com</a></div>
+                        <div class="col-3"><a href=""><i class="bi bi-facebook"></i>My FaceBook Profile</a></div>
+                    </div>
+                </div>
+            </div>
+
+            
+        
+        </div>
+        <footer class="bg-dark text-white text-center p-3">
+            FGP &copy;2022. All rights reserved.
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    </body>
+</html>
