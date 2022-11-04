@@ -67,12 +67,16 @@
                 display: flex;
                 flex-direction: row;
             }
-            @media screen and (max-width: 478px) {
+            .what > img{
+                width: 100%;
+            }
+            @media screen and (max-width: 768px) {
                 
                 .imgsizer img{
                     
                     height: 75px;
                 }
+                
             }
 
         </style>
@@ -85,9 +89,9 @@
     </head>
     <body id="body">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-sm">
+        <nav class="navbar navbar-expand-sm sticky-top bg-dark">
             <div class="container-fluid">
-                <!-- <img src="Kodego.png" alt="" style="width:50px; height:50px;"> -->
+                <img src="images/download.png" alt="" style="width:75px; height:55px;">
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar_collapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -175,17 +179,17 @@
                 <div class="d-flex row">
                     
                         <div class="card col-4">
-                            <a href="https://kyuru2425.github.io/"><h4 class="text-center">AnimeNovelsRead</h4>
-                            <img src="images/ANR.PNG" alt="" style="width:100%; height: 50vh;">
+                            <a href="https://kyuru2425.github.io/" class="what"><h4 class="text-center">AnimeNovelsRead</h4>
+                            <img src="images/ANR.PNG" alt="">
                             </a>
                         </div>
                     
                     <div class="card col-4">
-                        <h4 class="text-center">Hello!Work</h4>
-                        <img src="images/hellowork.PNG" alt="">
+                        <a href="https://github.com/kyuru2425/helloWork.github.io" class="what"><h4 class="text-center">Hello!Work</h4>
+                        <img src="images/hellowork.PNG" alt=""></a>
                     </div>
                     <div class="card col-4">
-                        <h4 class="text-center">Activity 2</h4>
+                        <h4 class="text-center">Coming Soon!</h4>
                         <img src="" alt="">
                     </div>
                 </div>
